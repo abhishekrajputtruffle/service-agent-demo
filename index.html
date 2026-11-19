@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demo Support Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <span class="wordmark">Demo Support Portal</span>
+      <span class="signed-in" aria-label="Signed in">Signed in as Demo Customer</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="inner narrow">
+        <h1>How can we help you today?</h1>
+        <p class="sub">Ask our Service Agent about products, your account, or open a support case.</p>
+
+        <form class="ask" id="askForm" autocomplete="off">
+          <label for="askInput" class="visually-hidden">Ask our Service Agent</label>
+          <input id="askInput" type="text" placeholder="Describe your issue or ask a question...">
+          <button type="submit" id="askButton">Ask</button>
+        </form>
+        <p class="agent-error" id="agentError" hidden>The Service Agent is not available right now. Please try again in a moment.</p>
+
+        <div class="hints" aria-label="Example questions">
+          <button type="button" class="hint" data-question="When does my contract renew?">When does my contract renew?</button>
+          <button type="button" class="hint" data-question="Please open a support case. Since yesterday two of my users can't log in. Their authenticator code is rejected as invalid every time, new codes don't help, and everyone else can log in.">Two users can't log in</button>
+          <button type="button" class="hint" data-question="I want to cancel my subscription.">Cancel my subscription</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="cards inner">
+      <article class="card">
+        <h2>Product answers</h2>
+        <p>Answers grounded in the Knowledge Base, filtered to your account type.</p>
+      </article>
+      <article class="card">
+        <h2>Support cases</h2>
+        <p>Creates cases across five help desks, with product and priority captured for you.</p>
+      </article>
+      <article class="card">
+        <h2>Account &amp; billing</h2>
+        <p>Contract, renewal and contact details from your live account record.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">Demo Support Portal · Demo environment with sample data</div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
